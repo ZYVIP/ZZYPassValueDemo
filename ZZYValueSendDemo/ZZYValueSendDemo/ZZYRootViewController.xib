@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZZYRootViewController">
+            <connections>
+                <outlet property="appBtn" destination="NcM-1X-GFO" id="kdP-FC-NL0"/>
+                <outlet property="blockBtn" destination="ncd-0j-FEp" id="Zef-xs-P2T"/>
+                <outlet property="delegateBtn" destination="omd-kv-cUW" id="AFI-ko-brF"/>
+                <outlet property="notiBtn" destination="tmM-a6-lKF" id="LJv-Y3-Bmz"/>
+                <outlet property="vcBtn" destination="SFQ-Dn-El7" id="iN9-by-Bmg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcM-1X-GFO">
+                    <rect key="frame" x="144" y="110" width="86" height="30"/>
+                    <state key="normal" title="app传值按钮"/>
+                    <connections>
+                        <action selector="pressAppVc:" destination="-1" eventType="touchUpInside" id="VRU-zQ-hu0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-kv-cUW">
+                    <rect key="frame" x="142" y="170" width="90" height="30"/>
+                    <state key="normal" title="代理传值按钮"/>
+                    <connections>
+                        <action selector="pressDelegateVc:" destination="-1" eventType="touchUpInside" id="Qec-eG-0Zl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-Dn-El7">
+                    <rect key="frame" x="135" y="230" width="105" height="30"/>
+                    <state key="normal" title="控制器传值按钮"/>
+                    <connections>
+                        <action selector="pressVc:" destination="-1" eventType="touchUpInside" id="RQd-dW-wrq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-a6-lKF">
+                    <rect key="frame" x="142" y="290" width="90" height="30"/>
+                    <state key="normal" title="通知传值按钮"/>
+                    <connections>
+                        <action selector="pressnotivc:" destination="-1" eventType="touchUpInside" id="Y95-UD-HEc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-0j-FEp">
+                    <rect key="frame" x="138" y="350" width="98" height="30"/>
+                    <state key="normal" title="block传值按钮"/>
+                    <connections>
+                        <action selector="pressblockVc:" destination="-1" eventType="touchUpInside" id="tZO-2g-AZb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="omd-kv-cUW" firstAttribute="top" secondItem="NcM-1X-GFO" secondAttribute="bottom" constant="30" id="CCa-NK-dez"/>
+                <constraint firstItem="NcM-1X-GFO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LZR-26-HCf"/>
+                <constraint firstItem="SFQ-Dn-El7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NgW-s4-PsH"/>
+                <constraint firstItem="tmM-a6-lKF" firstAttribute="top" secondItem="SFQ-Dn-El7" secondAttribute="bottom" constant="30" id="UUN-J1-nbg"/>
+                <constraint firstItem="tmM-a6-lKF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aGH-C2-uV9"/>
+                <constraint firstItem="ncd-0j-FEp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eTA-YZ-nzF"/>
+                <constraint firstItem="NcM-1X-GFO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="110" id="oGV-zv-LEh"/>
+                <constraint firstItem="omd-kv-cUW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qT5-qi-CKe"/>
+                <constraint firstItem="SFQ-Dn-El7" firstAttribute="top" secondItem="omd-kv-cUW" secondAttribute="bottom" constant="30" id="sA2-gs-1Ps"/>
+                <constraint firstItem="ncd-0j-FEp" firstAttribute="top" secondItem="tmM-a6-lKF" secondAttribute="bottom" constant="30" id="xgm-7E-fCC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
